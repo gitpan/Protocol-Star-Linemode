@@ -3,10 +3,15 @@ NAME
     POS printers
 
 SYNOPSIS
-      use Web::Controller;
+      use Protocol::Star::Linemode::Generated;
 
-DESCRIPTION
-    Web::Controller is
+      my $p = Protocol::Star::Linemode::Generated->new;
+      $p->set_emphasized_printing;
+      $p->text("Hello world");
+      $p->cancel_emphasized_printing;
+
+      my $formatted_output = $p->result;
+      # Send $formatted_output to printer
 
 AUTHOR
     Peter Stuifzand <peter@stuifzand.eu>
