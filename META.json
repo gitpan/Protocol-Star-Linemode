@@ -4,7 +4,7 @@
       "Peter Stuifzand <peter@stuifzand.eu>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Milla version v0.9.7, Dist::Zilla version 4.300032, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Milla version v1.0.3, Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -32,12 +32,17 @@
       },
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.025"
+            "Module::Build::Tiny" : "0.030"
          }
       },
       "develop" : {
          "requires" : {
             "Test::Pod" : "1.41"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Moo" : "1.004002"
          }
       }
    },
@@ -53,7 +58,7 @@
          "web" : "https://github.com/stuifzand-software/star-linemode"
       }
    },
-   "version" : "0.1.2",
+   "version" : "1.0.0",
    "x_contributors" : [
       "Peter Stuifzand <peter.stuifzand@gmail.com>"
    ]
